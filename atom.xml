@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-04T03:13:31.423Z</updated>
+    <updated>2020-03-04T03:15:31.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -10,11 +10,4 @@
     <logo>https://PaTinLei.github.io/images/avatar.png</logo>
     <icon>https://PaTinLei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, leilei&apos;s Blog</rights>
-    <entry>
-        <title type="html"><![CDATA[数字图像处理演示系统]]></title>
-        <id>https://PaTinLei.github.io/post/shu-zi-tu-xiang-chu-li-yan-shi-xi-tong/</id>
-        <link href="https://PaTinLei.github.io/post/shu-zi-tu-xiang-chu-li-yan-shi-xi-tong/">
-        </link>
-        <updated>2020-03-04T03:06:07.000Z</updated>
-    </entry>
 </feed>
