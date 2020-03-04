@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-04T03:15:31.503Z</updated>
+    <updated>2020-03-04T03:19:55.928Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -10,4 +10,78 @@
     <logo>https://PaTinLei.github.io/images/avatar.png</logo>
     <icon>https://PaTinLei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, leilei&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[基于JSP的公司后台管理系统设计实验]]></title>
+        <id>https://PaTinLei.github.io/post/ji-yu-jsp-de-gong-si-hou-tai-guan-li-xi-tong-she-ji-shi-yan/</id>
+        <link href="https://PaTinLei.github.io/post/ji-yu-jsp-de-gong-si-hou-tai-guan-li-xi-tong-she-ji-shi-yan/">
+        </link>
+        <updated>2020-03-04T03:15:34.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
+<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming.git">Github地址</a>。</p>
+<h3 id="设计实现">设计实现</h3>
+<h4 id="1-开发工具">1、开发工具</h4>
+<blockquote>
+<p>MyEclipse、SQL Server、Tomcat</p>
+</blockquote>
+<h4 id="基础功能">基础功能</h4>
+<blockquote>
+<p>基于Ajax + div，使用Bootstrap框架和FontAwesome的图标开发了网站首页，包括页面左<br>
+边的功能复选功能区域，右上角常规登陆、注册操作区域，每个功能选项都配置了精美的小<br>
+图标，网站大部分内容都在页面右边显示。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
+<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming.git">Github地址</a>。</p>
+<h3 id="设计实现">设计实现</h3>
+<h4 id="1-开发工具">1、开发工具</h4>
+<blockquote>
+<p>MyEclipse、SQL Server、Tomcat</p>
+</blockquote>
+<h4 id="基础功能">基础功能</h4>
+<blockquote>
+<p>基于Ajax + div，使用Bootstrap框架和FontAwesome的图标开发了网站首页，包括页面左<br>
+边的功能复选功能区域，右上角常规登陆、注册操作区域，每个功能选项都配置了精美的小<br>
+图标，网站大部分内容都在页面右边显示。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数字图像处理演示系统]]></title>
+        <id>https://PaTinLei.github.io/post/shu-zi-tu-xiang-chu-li-yan-shi-xi-tong/</id>
+        <link href="https://PaTinLei.github.io/post/shu-zi-tu-xiang-chu-li-yan-shi-xi-tong/">
+        </link>
+        <updated>2020-03-04T03:06:07.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
+<blockquote>
+<p>基于MATLAB的数字图像处理演示系统,源码已开源<a href="https://github.com/PaTinLei/DigitalImageProcessingSystem.git">Github地址</a>。</p>
+</blockquote>
+<h3 id="设计要求">设计要求</h3>
+<blockquote>
+<p>使用MATLAB编程实现仿真系统（包含算法可以是基本信号的显示、基本运算、数字滤波器设计等）。</p>
+</blockquote>
+<h3 id="设计实现">设计实现</h3>
+<blockquote>
+<p>本系统设计了三个演示模块，分别为常见信号显示、图像滤波器、《数字信号处理》仿真系统，实现<br>
+了对常见的13种信号的显示功能，6种图像增强功能，4种图像添加噪声的功能，3种图像滤波功能，信号<br>
+叠加、采样、恢复、频域显示等过程演示功能，为方便后续的使用使用deploytool将所有.m文件打包成<br>
+独立可执行程序.exe。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
+<blockquote>
+<p>基于MATLAB的数字图像处理演示系统,源码已开源<a href="https://github.com/PaTinLei/DigitalImageProcessingSystem.git">Github地址</a>。</p>
+</blockquote>
+<h3 id="设计要求">设计要求</h3>
+<blockquote>
+<p>使用MATLAB编程实现仿真系统（包含算法可以是基本信号的显示、基本运算、数字滤波器设计等）。</p>
+</blockquote>
+<h3 id="设计实现">设计实现</h3>
+<blockquote>
+<p>本系统设计了三个演示模块，分别为常见信号显示、图像滤波器、《数字信号处理》仿真系统，实现<br>
+了对常见的13种信号的显示功能，6种图像增强功能，4种图像添加噪声的功能，3种图像滤波功能，信号<br>
+叠加、采样、恢复、频域显示等过程演示功能，为方便后续的使用使用deploytool将所有.m文件打包成<br>
+独立可执行程序.exe。</p>
+</blockquote>
+]]></content>
+    </entry>
 </feed>
