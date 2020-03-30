@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-30T10:41:51.414Z</updated>
+    <updated>2020-03-30T12:56:10.532Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -71,10 +71,10 @@
         </link>
         <updated>2020-03-04T03:15:34.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
-<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming.git">Github地址</a>。</p>
+<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming_exp">Github地址</a>。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h3 id="设计题目">设计题目</h3>
-<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming.git">Github地址</a>。</p>
+<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming_exp">Github地址</a>。</p>
 ]]></content>
     </entry>
     <entry>
