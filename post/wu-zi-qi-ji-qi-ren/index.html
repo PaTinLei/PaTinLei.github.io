@@ -1,106 +1,128 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>五子棋机器人 | leilei&#39;s Blog</title>
-<meta name="description" content="个人日常学习与生活">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://PaTinLei.github.io/favicon.ico?v=1585620943739">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    五子棋机器人 | leilei&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://PaTinLei.github.io/favicon.ico?v=1585640972168">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://PaTinLei.github.io/styles/main.css">
-
-
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://PaTinLei.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+</head>
 
-
-  </head>
-  <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://PaTinLei.github.io">leilei&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://PaTinLei.github.io">
+                <img class="avatar" src="https://PaTinLei.github.io/images/avatar.png?v=1585640972168" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    leilei&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>五子棋机器人</h1>
-            <p class="article-meta">
-              2020-03-04
-              
-                <a href="https://PaTinLei.github.io/tag/ijzA5pZLA/" class="badge warning">
-                  robot
-                </a>
-              
-                <a href="https://PaTinLei.github.io/tag/mEiCD2jcec/" class="badge success">
-                  Python
-                </a>
-              
-                <a href="https://PaTinLei.github.io/tag/L3iCTpeWGx/" class="badge secondary">
-                  OpenCV
-                </a>
-              
-            </p>
-            
-            <div class="post-content">
-              <h2 id="项目简介">项目简介</h2>
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            五子棋机器人
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-03-04</time>
+                            
+                                <a href="https://PaTinLei.github.io/tag/ijzA5pZLA/" class="post-tag i-tag
+                            i-tag-info">
+                            #robot
+                        </a>
+                                
+                                <a href="https://PaTinLei.github.io/tag/mEiCD2jcec/" class="post-tag i-tag
+                            i-tag-other_1">
+                            #Python
+                        </a>
+                                
+                                <a href="https://PaTinLei.github.io/tag/L3iCTpeWGx/" class="post-tag i-tag
+                            i-tag-other_1">
+                            #OpenCV
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <h2 id="项目简介">项目简介</h2>
 <blockquote></blockquote>
 <p>针对目前五子棋博弈多是基于算法及软件，缺少真实对弈环境的问题，设计了一种基于人工智能(AI)的五子棋机器人。设计的系统使用图像传感器采集棋子位置信息；根据五子棋的特点，设计了集成颜色识别、强化学习的五子棋对弈算法，对当前棋局的局势进行分析，做出决策；通过PC机控制串行总线舵机完成棋子的精准抓取与释放，完成人机对弈。通过实际的测试表明，系统胜率达到了90％以上，并且可以调节机器人下棋水平以适应不同的玩家。</p>
 <!-- more -->
@@ -108,136 +130,95 @@
 <h2 id="实物图">实物图</h2>
 <figure data-type="image" tabindex="2"><img src="https://PaTinLei.github.io/post-images/1583292121388.PNG" alt="实物图" loading="lazy"></figure>
 
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://PaTinLei.github.io/post/ji-yu-jsp-de-gong-si-hou-tai-guan-li-xi-tong-she-ji-shi-yan/">
-                <h3 class="post-title">
-                  基于JSP的公司后台管理系统设计实验
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-      </div>
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://PaTinLei.github.io/post/ji-yu-jsp-de-gong-si-hou-tai-guan-li-xi-tong-she-ji-shi-yan/">
+                                <h3 class="post-title">
+                                    基于JSP的公司后台管理系统设计实验
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B">项目简介</a></li>
+<li><a href="#%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</a></li>
+</ul>
+</li>
+</ul>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://PaTinLei.github.io/images/avatar.png?v=1585620943739" class="no-responsive avatar">
-    <div class="text-muted">个人日常学习与生活</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-1-ji-chu-zhi-shi-xue-xi-pian/">【实验室系列-1】基础知识学习篇</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://PaTinLei.github.io/post/shuang-bi-er-zhi-mo-fang-ji-qi-ren/">双臂二指魔方机器人</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://PaTinLei.github.io/post/wu-zi-qi-ji-qi-ren/">五子棋机器人</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://PaTinLei.github.io/post/ji-yu-jsp-de-gong-si-hou-tai-guan-li-xi-tong-she-ji-shi-yan/">基于JSP的公司后台管理系统设计实验</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://PaTinLei.github.io/post/shu-zi-tu-xiang-chu-li-yan-shi-xi-tong/">数字图像处理演示系统</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://PaTinLei.github.io/tag/ijzA5pZLA/" class="badge warning">
-          robot
-        </a>
-      
-        <a href="https://PaTinLei.github.io/tag/mEiCD2jcec/" class="badge success">
-          Python
-        </a>
-      
-        <a href="https://PaTinLei.github.io/tag/L3iCTpeWGx/" class="badge secondary">
-          OpenCV
-        </a>
-      
-        <a href="https://PaTinLei.github.io/tag/lTCl-5UK5/" class="badge warning">
-          Java
-        </a>
-      
-        <a href="https://PaTinLei.github.io/tag/D95zLDjPmb/" class="badge warning">
-          HTML
-        </a>
-      
-        <a href="https://PaTinLei.github.io/tag/kWbDV-wim/" class="badge secondary">
-          Matlab
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://PaTinLei.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://PaTinLei.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
 
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
 
-
-  </body>
 </html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-31T02:15:45.612Z</updated>
+    <updated>2020-03-31T07:49:34.418Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -16,25 +16,11 @@
         <link href="https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-1-ji-chu-zhi-shi-xue-xi-pian/">
         </link>
         <updated>2020-03-31T01:07:28.000Z</updated>
-        <summary type="html"><![CDATA[<h3 id="python入门">Python入门</h3>
-<p><a href="https://zh.wikipedia.org/wiki/Python">Python</a> 是一种解释型、面向对象、动态数据类型的高级程序设计语言。基于大数据分析和深度学习的人工智能本质上已经无法离开Python的支持，目前主流的人工智能学习框架TensorFlow、PyTorch、Karas等都是用python实现的。<br>
-####Python发展历史<br>
-####推荐教程<br>
-<a href="https://www.sololearn.com/">SoloLearn</a>。</p>
-<p>###机器学习入门<br>
-L<br>
-###Pytorch入门</p>
-<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming_exp">Github地址</a>。</p>
+        <summary type="html"><![CDATA[<h3 id="1-python入门">1、Python入门</h3>
+<p><a href="https://zh.wikipedia.org/wiki/Python">Python</a> 是一种解释型、面向对象、动态数据类型的高级程序设计语言，具有易于学习，可读性强，使用简单等优点。基于大数据分析和深度学习的人工智能已经无法离开Python的支持，目前主流的人工智能学习框架TensorFlow、PyTorch、Karas等都是用Python实现的。在接下来的学习中，我们需要熟练掌握Python编程语言及常用矩阵操作。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h3 id="python入门">Python入门</h3>
-<p><a href="https://zh.wikipedia.org/wiki/Python">Python</a> 是一种解释型、面向对象、动态数据类型的高级程序设计语言。基于大数据分析和深度学习的人工智能本质上已经无法离开Python的支持，目前主流的人工智能学习框架TensorFlow、PyTorch、Karas等都是用python实现的。<br>
-####Python发展历史<br>
-####推荐教程<br>
-<a href="https://www.sololearn.com/">SoloLearn</a>。</p>
-<p>###机器学习入门<br>
-L<br>
-###Pytorch入门</p>
-<p>UPC2019年网络软件编程实验,源码已开源<a href="https://github.com/PaTinLei/NetworkSoftwareProgramming_exp">Github地址</a>。</p>
+        <content type="html"><![CDATA[<h3 id="1-python入门">1、Python入门</h3>
+<p><a href="https://zh.wikipedia.org/wiki/Python">Python</a> 是一种解释型、面向对象、动态数据类型的高级程序设计语言，具有易于学习，可读性强，使用简单等优点。基于大数据分析和深度学习的人工智能已经无法离开Python的支持，目前主流的人工智能学习框架TensorFlow、PyTorch、Karas等都是用Python实现的。在接下来的学习中，我们需要熟练掌握Python编程语言及常用矩阵操作。</p>
 ]]></content>
     </entry>
     <entry>
