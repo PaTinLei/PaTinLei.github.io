@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-31T08:58:18.768Z</updated>
+    <updated>2020-03-31T11:39:59.840Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://PaTinLei.github.io/images/avatar.png</logo>
     <icon>https://PaTinLei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, leilei&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[【实验室系列 2】软件篇]]></title>
+        <id>https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-2-ruan-jian-pian/</id>
+        <link href="https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-2-ruan-jian-pian/">
+        </link>
+        <updated>2020-03-31T08:59:59.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="1-搭建本地编程环境">1 搭建本地编程环境</h3>
+<p>在接下来的科研学习中，程序大部分会在实验室服务器上运行。但是搭建本地的编程环境，通过可视化界面有助于我们理解Python新建编程环境与根环境之间的关系，学会使用Jupyter Notebook、Spyder、Ipython，以及常用的软件包安装方式。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="1-搭建本地编程环境">1 搭建本地编程环境</h3>
+<p>在接下来的科研学习中，程序大部分会在实验室服务器上运行。但是搭建本地的编程环境，通过可视化界面有助于我们理解Python新建编程环境与根环境之间的关系，学会使用Jupyter Notebook、Spyder、Ipython，以及常用的软件包安装方式。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【实验室系列 1】基础知识学习篇]]></title>
         <id>https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-1-ji-chu-zhi-shi-xue-xi-pian/</id>

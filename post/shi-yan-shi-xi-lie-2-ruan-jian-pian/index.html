@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    双臂二指魔方机器人 | leilei&#39;s Blog
+    【实验室系列 2】软件篇 | leilei&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://PaTinLei.github.io/favicon.ico?v=1585654796981">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -99,50 +99,40 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            双臂二指魔方机器人
+                            【实验室系列 2】软件篇
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2020-03-04</time>
+                            <time class="post-time">2020-03-31</time>
                             
-                                <a href="https://PaTinLei.github.io/tag/ijzA5pZLA/" class="post-tag i-tag
-                            i-tag-info">
-                            #robot
-                        </a>
-                                
-                                <a href="https://PaTinLei.github.io/tag/mEiCD2jcec/" class="post-tag i-tag
-                            i-tag-success">
-                            #Python
-                        </a>
-                                
-                                <a href="https://PaTinLei.github.io/tag/L3iCTpeWGx/" class="post-tag i-tag
-                            i-tag-other_3">
-                            #OpenCV
-                        </a>
-                                
                         </div>
                         
                                 <div class="post-content">
-                                    <h2 id="项目简介">项目简介</h2>
-<blockquote>
-<p>魔方机器人设计了集摄像头、运行高精度和高速识别控制算法的计算机、机械爪等为一体的双臂二指魔方机器人。系统使用三摄像头协同采集图像，由计算机运行设计的算法并控制设计的机械爪相应的动作。作为系统核心的算法首先使用Scikit-learn的Random Fores分类算法，进行基于色彩空间LAB的颜色识别，完成对魔方状态的识别；然后使用Kociemba算法求解出魔方复原动作，并使用Keras神经网络对复原动作进行优化，减少动作数量。机械爪使用V-REP和SimulationXpress进行机械的仿真和分析，设计了平行连杆双爪结构。实验证明，设计的系统不但性能稳定，而且能在8秒内快速完成魔方的复原。</p>
-</blockquote>
+                                    <h3 id="1-搭建本地编程环境">1 搭建本地编程环境</h3>
+<p>在接下来的科研学习中，程序大部分会在实验室服务器上运行。但是搭建本地的编程环境，通过可视化界面有助于我们理解Python新建编程环境与根环境之间的关系，学会使用Jupyter Notebook、Spyder、Ipython，以及常用的软件包安装方式。</p>
 <!-- more -->
-<h3 id="1-颜色识别">1、颜色识别</h3>
+<h4 id="anaconda"><a href="https://zh.wikipedia.org/wiki/Anaconda">Anaconda</a></h4>
+<p><a href="https://link.zhihu.com/?target=https%3A//www.anaconda.com/download/%23macos">Anaconda</a>是在 conda（一个包管理器和环境管理器）上发展出来的。在数据分析中，需要用到很多第三方的包，而conda可以很好的帮助你在计算机上安装和管理这些包，包括安装、卸载和更新包。Anaconda还包含了conda、Python在内的超过180个科学包及其依赖项，因此可以快速展开实验。</p>
 <blockquote>
-<p>魔方机器人采用双臂两指结构，由摄像头、计算机、机械爪三部分组成。摄像头部分负责<br>
-采集魔方六个面的颜色信息；</p>
+<p><strong>为什么需要管理环境？</strong><br>
+比如你在项目A中需要使用 Python 2，而另一个项目B要求使用Python 3，而同时安装两个Python版本可能会造成混乱和错误。这时候你可以使用 conda为不同的项目建立不同的运行环境。还有很多项目使用的包版本不同，比如不同的Numpy版本，不可能同时安装两个 Numpy 版本，你应该为每个 Numpy 版本创建一个环境，然后在项目的对应环境中工作。</p>
 </blockquote>
-<p><img src="https://PaTinLei.github.io/post-images/1583292274731.png" alt="魔方展开图" loading="lazy"><br>
-<img src="https://PaTinLei.github.io/post-images/1583292297931.png" alt="rgb" loading="lazy"></p>
-<h3 id="2-复原动作">2、复原动作</h3>
-<p>计算机将采集到的颜色信息进行处理分析，转化为解法的输入信息，同时将所获得的解法转<br>
-化为机械爪的动作；</p>
-<h3 id="3-机械爪">3、机械爪</h3>
-<p>机械爪负责执行从计算机得到的指令，对魔方进行转动。这三部分是魔方机器人的主要结构，<br>
-通过不断优化这三者之间的关系，使整个还原魔方的过程更加迅速、精确。</p>
-<figure data-type="image" tabindex="1"><img src="https://PaTinLei.github.io/post-images/1583292324620.png" alt="机械爪" loading="lazy"></figure>
-<h3 id="4-实物图">4、实物图</h3>
-<figure data-type="image" tabindex="2"><img src="https://PaTinLei.github.io/post-images/1583292350318.png" alt="" loading="lazy"></figure>
+<p>【<a href="https://zhuanlan.zhihu.com/p/61639212">Windows安装Anaconda以及使用教程</a>】<br>
+【<a href="https://blog.csdn.net/lq_547762983/article/details/81003528">Mac安装Anaconda以及使用教程</a>】</p>
+<h3 id="2-服务器使用">2 服务器使用</h3>
+<p>目前实验室有两台服务器<a href="https://baike.baidu.com/item/Tesla%C2%A0V100/20796398">TeslaV100</a>和K80，通过软件Xshell和Xftp远程运行程序和传输文件（安装包以及登陆账号见群文件）。<br>
+<a href="https://baike.baidu.com/item/Xshell/5659054">Xshell</a></p>
+<blockquote>
+<p>Xshell是Windows下一款功能非常强大的安全终端模拟软件，支持Telnet、Rlogin、SSH、SFTP、Serial 等协议，可以非常方便的对linux主机进行远程管理。</p>
+</blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/Xftp">Xftp</a></p>
+<blockquote>
+<p>Xftp是一个基于 MS windows 平台的SFTP、FTP 文件传输软件。使用Xftp，MS windows 用户能安全地在 UNIX/Linux 和 Windows PC 之间传输文件。</p>
+</blockquote>
+<h3 id="3-linux常用指令">3 Linux常用指令</h3>
+<p>【<a href="https://www.runoob.com/w3cnote/linux-common-command-2.html">Linux 常用命令学习</a>】【<a href="https://www.processon.com/view/5c4811e6e4b048f108dacd25#map">Linux常用命令思维导图</a>】<br>
+<img src="https://PaTinLei.github.io/post-images/1585652343585.jpg" alt="来源于网络侵删" loading="lazy"></p>
+<h3 id="4-anaconda常用指令">4 Anaconda常用指令</h3>
+<figure data-type="image" tabindex="1"><img src="https://PaTinLei.github.io/post-images/1585653656773.png" alt="Anaconda" loading="lazy"></figure>
 
                                 </div>
                     </article>
@@ -150,9 +140,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://PaTinLei.github.io/post/wu-zi-qi-ji-qi-ren/">
+                            <a href="https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-1-ji-chu-zhi-shi-xue-xi-pian/">
                                 <h3 class="post-title">
-                                    五子棋机器人
+                                    【实验室系列 1】基础知识学习篇
                                 </h3>
                             </a>
                         </div>
@@ -173,12 +163,16 @@
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B">项目简介</a>
+<li>
 <ul>
-<li><a href="#1-%E9%A2%9C%E8%89%B2%E8%AF%86%E5%88%AB">1、颜色识别</a></li>
-<li><a href="#2-%E5%A4%8D%E5%8E%9F%E5%8A%A8%E4%BD%9C">2、复原动作</a></li>
-<li><a href="#3-%E6%9C%BA%E6%A2%B0%E7%88%AA">3、机械爪</a></li>
-<li><a href="#4-%E5%AE%9E%E7%89%A9%E5%9B%BE">4、实物图</a></li>
+<li><a href="#1-%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83">1 搭建本地编程环境</a>
+<ul>
+<li><a href="#anaconda">Anaconda</a></li>
+</ul>
+</li>
+<li><a href="#2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8">2 服务器使用</a></li>
+<li><a href="#3-linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4">3 Linux常用指令</a></li>
+<li><a href="#4-anaconda%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4">4 Anaconda常用指令</a></li>
 </ul>
 </li>
 </ul>
