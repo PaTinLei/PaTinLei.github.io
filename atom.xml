@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://PaTinLei.github.io</id>
     <title>leilei&apos;s Blog</title>
-    <updated>2020-03-31T12:36:54.663Z</updated>
+    <updated>2020-04-06T05:41:17.630Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://PaTinLei.github.io"/>
     <link rel="self" href="https://PaTinLei.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://PaTinLei.github.io/images/avatar.png</logo>
     <icon>https://PaTinLei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, leilei&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[【Python学习笔记】]]></title>
+        <id>https://PaTinLei.github.io/post/python-xue-xi-bi-ji/</id>
+        <link href="https://PaTinLei.github.io/post/python-xue-xi-bi-ji/">
+        </link>
+        <updated>2020-04-06T05:40:07.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【实验室系列 2】软件篇]]></title>
         <id>https://PaTinLei.github.io/post/shi-yan-shi-xi-lie-2-ruan-jian-pian/</id>
